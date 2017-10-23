@@ -444,6 +444,18 @@ a.active {
     padding: 0.25em 1em 0.2em 1em;
 }
 
+/* education section
+==================================================*/
+
+#education {
+    padding: 100px 0;
+    background: #f3f3f3
+}
+
+.education-table td {
+    padding-right: 20px;
+    text-align: left;
+}
 
 /* projects section
 ==================================================*/
