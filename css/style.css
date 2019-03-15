@@ -830,3 +830,7 @@ fieldset {
     display: table;
     height: 100vh;
 }
+
+.mb-0 {
+    margin-bottom: 0;
+}
