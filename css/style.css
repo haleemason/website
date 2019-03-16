@@ -298,6 +298,21 @@ a.active {
     height: 100vh;
 }
 
+.text-white {
+    color: #ffffff;
+}
+
+h4.text-white:before {
+    position: absolute;
+    width: 30px;
+    left: -40px;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #ffffff;
+    top: 9px;
+}
+
 
 /* about section
 ==================================================*/
