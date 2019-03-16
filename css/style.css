@@ -71,6 +71,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
+    min-width: 540px!important;
 }
 
 .size-50 {
@@ -833,4 +834,8 @@ fieldset {
 
 .mb-0 {
     margin-bottom: 0;
+}
+
+.text-nowrap {
+    white-space: nowrap;
 }
