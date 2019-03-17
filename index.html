@@ -37,14 +37,36 @@
 
   <!-- header -->
   <header class="navbar-fixed-top">
-    <nav>
+    <!-- <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top:15px">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
   </header>
   <!-- ./header -->
 
@@ -65,16 +87,16 @@
       <div class="container">
         <div class="col-md-6" data-aos="fade-up">
           <h4>01</h4>
-          <h1 class="size-50">About Me</h1>
+          <h1 class="size-50">About Halee</h1>
           <div class="h-50"></div>
-          <p>Experienced Data Scientist with a MS in Data Science and a demonstrated history of collaborations with clients to solve challenging problems in the machine learning and AI consulting services industry. Thrives when developing and deploying predictive models in production environments to drive business value for clients. Enjoys blending Data Science and Software Engineering best practices with a machine learning focus to create useful, repeatable solutions. Skilled in data wrangling, text mining and classification, algorithm development, and deployment of analytical models while utilizing technologies such as Python, Spark, and R.
+          <p>Experienced Data Scientist with a masters in Data Science and a demonstrated history of collaborations with clients to solve challenging problems in the machine learning and AI consulting services industry. Thrives when developing and deploying predictive models in production environments to drive business value for clients. Enjoys blending Data Science and Software Engineering best practices with a machine learning focus to create useful, repeatable solutions. Skilled in data wrangling, text mining and classification, algorithm development, and deployment of analytical models while utilizing technologies such as Python, Spark, and R.
           </p>
           <!-- <div class="h-50"></div> <img src="img/Signature.svg" width="300" alt="" /> -->
           <div class="h-50"></div>
         </div>
         <div class="col-md-6 about-img-div">
-          <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
-          <img src="img/about-img.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
+          <!-- <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div> -->
+          <img src="img/about-img.jpg" width="400" class="img-responsive" alt="" data-aos="fade-right" data-aos-delay="0" id="profile-img" />
         </div>
       </div>
     </div>
@@ -85,7 +107,7 @@
       <div class="container">
         <div class="col-md-12">
           <h4>02</h4>
-          <h1 class="size-50">My <br /> Experience</h1>
+          <h1 class="size-50">Experience</h1>
           <div class="h-50"></div>
         </div>
         <div class="col-md-12">
@@ -141,7 +163,7 @@
         <div class="container">
           <div class="col-md-12">
             <h4>03</h4>
-            <h1 class="size-50">My <br/> Education</h1>
+            <h1 class="size-50">Education</h1>
             <div class="h-50"></div>
           </div>
           <div class="col-md-12">
@@ -152,34 +174,26 @@
                   <p class="timeline-event-thumbnail">August 2017</p>
                   <h3>M.S. Data Science</h3> <!-- Master of Science (M.S.), Data Science  -->
                   <h4><a href="https://www.uwec.edu/">University of Wisconsin Eau Claire</a></h4>
-                  <p class="mb-0"><strong>Capstone:</strong> Predicting Risk of Readmission for Stroke Patients</p>
-                  <ul class="capstone-table">
-                      <li>Built a predictive model using Python and TensorFlow that was optimized to forecast the risk of rehospitalization in the year following stroke.</li>
-                      <li>Collaborated with client to understand the business proposition that successful data science application would have for this project and focused on model explainability by using techniques such as <a href="https://github.com/marcotcr/lime">LIME</a>.</li>
-                      <li>Implemented model using Heroku web service to drive patient outcomes to help the client segment high risk patients and engage with them more closely to prevent readmission.</li>
-                      <li>Deployed the final deliverable model through an API endpoint which allowed for the client to input patient specific parameters (input features) and for the model to output a personalized risk score of rehospitalization.</li>
-                  </ul>
-                  <br>
                   <p><strong>Courses:</strong></p>
                   <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                         <ul class="list-unstyled">
                           <li class="text-nowrap">Statistical Methods</li>
-                          <li class="text-nowrap">High-Performance Computing</li>
-                          <li class="text-nowrap">Data Mining</li>
+                          <li class="text-nowrap">Data Warehousing</li>
+                          <li class="text-nowrap">Prescriptive Analytics</li>
                         </ul>
                     </div>
                      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                       <ul class="list-unstyled">
                         <li class="text-nowrap">Unstructured Data Analysis</li>
-                        <li class="text-nowrap">Data Warehousing</li>
+                        <li class="text-nowrap">High-Performance Computing</li>
                         <li class="text-nowrap">Programming for Data Science</li>
                       </ul>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                         <ul class="list-unstyled">
                           <li class="text-nowrap">Machine Learning</li>
-                          <li class="text-nowrap">Prescriptive Analytics</li>
+                          <li class="text-nowrap">Data Mining</li>
                           <li class="text-nowrap">Ethics of Data Science</li>
                         </ul>
                     </div>
@@ -234,12 +248,99 @@
           </div>
           <!-- ./education -->
 
+    <!-- projects -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="col-md-12">
+                <h4>04</h4>
+                <h1 class="size-50">Projects</h1>
+            </div>
+            <!-- main container -->
+            <div class="main-container portfolio-inner clearfix">
+                <!-- portfolio div -->
+                <div class="portfolio-div">
+                    <div class="portfolio">
+                        <!-- portfolio_filter -->
+                        <div class="categories-grid wow fadeInLeft">
+                            <nav class="categories">
+                                <ul class="portfolio_filter">
+                                    <li><a href="" class="active" data-filter="*">All</a></li>
+                                    <li><a href="" data-filter=".projects">Projects</a></li>
+                                    <li><a href="" data-filter=".competitions">Competitions</a></li>
+                                    <li><a href="" data-filter=".capstone">Capstone</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- portfolio_filter -->
+                        <!-- portfolio_container -->
+                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
+                          <!-- single work -->
+                          <div onclick="populateModalContent('Charlottesville Open Data<br /> Challenge', 
+                          '<p>Developed multiple timeseries models (ARIMA, Regression) in Python with a team of four Data Scientists. Deployed the models using Docker to forecast Wi-Fi usage in daily and hourly increments.</p>', 
+                          '<p>(April 2018) <br> </p> <p>Created a website using HTML/CSS, Vue, and JavaScript. Won 1st place Best Data Storytelling submission and 4th place Best Predictive Model submission.</p>', 
+                          'img/portfolio/01.jpg')" class="col-md-4 col-sm-6  competitions">
+                              <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/01.jpg" alt="image" class="img-responsive" />
+                                <div class="portfolio_item_hover">
+                                    <div class="portfolio-border clearfix">
+                                      <div class="item_info"> 
+                                        <span>Charlottesville Open Data Challenge</span><em>Competition</em><br>
+                                      </div>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- end single work -->
+                            <!-- single work -->
+                            <div onclick="populateModalContent('League of Legends<br /> Statistics Analysis', 
+                            'Personal Project to query the Riot Games Developer API to collect, clean, and prepare League of Legends data for analysis.', 
+                            '<p>(July 2018 – Present) </p> Developed a Random Forest model in Python that compiles ranked ladder data and classifies NA LCS Pro Players from Average players. Displayed statistics of each week’s professional gameplay to show how teams rank up against each other.', 
+                            'img/portfolio/02.jpg')" class="col-md-4 col-sm-6 projects">
+                              <a id="demo02" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/02.jpg" alt="image" class="img-responsive"/>
+                                <div class="portfolio_item_hover">
+                                    <div class="portfolio-border clearfix">
+                                        <div class="item_info"> 
+                                          <span>League of Legends Professional Player eSports Model</span> <em>Project</em> <br>
+                                        </div>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- end single work -->
+                            <!-- single work -->
+                            <div onclick="populateModalContent('Predicting Readmission<br /> Capstone Project', 
+                            '<p>Built a predictive model using Python and TensorFlow optimized to forecast the risk of rehospitalization in the year following stroke. Collaborated with client and focused on model explainability by using techniques such as LIME.</p>',
+                            '<p>(August 2017)</p> Implemented the model to drive patient outcomes to help the client segment high risk patients and engage with them more closely to prevent readmission. Deployed model through a Heroku web service which allowed for the client to input patient specific parameters and for the model to output a personalized risk score of rehospitalization.</p>', 
+                            'img/portfolio/03.jpg')" class="col-md-4 col-sm-6 capstone">
+                              <a id="demo03" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/03.jpg" alt="image" class="img-responsive" />
+                                <div class="portfolio_item_hover">
+                                    <div class="portfolio-border clearfix">
+                                        <div class="item_info"> 
+                                          <span>Predicting Risk of Readmission for Stroke Patients</span> <em>Capstone</em> <br>
+                                        </div>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- end single work -->
+                        </div>
+                        <!-- end portfolio_container -->
+                    </div>
+                    <!-- portfolio -->
+                </div>
+                <!-- end portfolio div -->
+            </div>
+            <!-- end main container -->
+        </div>
+    </div>
+    <!-- ./projects -->
+
+
           <!-- contact -->
           <div class="section" id="contact">
             <div class="container">
               <div class="col-md-12">
-                <h4>04</h4>
-                <h1 class="size-50">Contact  Me</h1>
+                <h4>05</h4>
+                <h1 class="size-50">Contact Halee</h1>
                 <div class="h-50"></div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-aos="fade-up">
@@ -250,8 +351,8 @@
                 <h3>Social Network</h3>
                  <ul class="social">
                   <li><a href="https://github.com/haleemason/"><i class="ion-social-github"></i></a></li>
-                  <li><a href="https://www.twitter.com/czayta"><i class="ion-social-twitter"></i></a></li>
-                  <!-- <li><a href="https://api.whatsapp.com/send?phone=16787876883&text=Hi.%20I%20found%20your%20website%20(www.bitfork.ml)%20and%20would%20like%20to%20connect."><i class="ion-social-whatsapp"></i></a></li> -->
+                  <!-- <li><a href="https://www.twitter.com/czayta"><i class="ion-social-twitter"></i></a></li>
+                  <li><a href="https://api.whatsapp.com/send?phone=16787876883&text=Hi.%20I%20found%20your%20website%20(www.bitfork.ml)%20and%20would%20like%20to%20connect."><i class="ion-social-whatsapp"></i></a></li> -->
                   <li><a href="http://www.linkedin.com/in/haleemason"><i class="ion-social-linkedin"></i></a></li>
                  </ul>
                 <div class="clearfix"></div>
@@ -276,6 +377,33 @@
             </div>
           </div>
           <!-- ./contact -->
+          <!--DEMO01-->
+          <div id="animatedModal" class="popup-modal">
+              <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+              <div id="btn-close-modal" class="close-animatedModal close-popup-modal"> <i class="ion-close-round"></i> </div>
+              <div class="clearfix"></div>
+              <div class="modal-content">
+                  <div class="container">
+                      <div class="portfolio-padding">
+                          <div class="col-md-8 col-md-offset-2">
+                              <h2 id="modal-title"></h2>
+                              <div class="h-50"></div>
+                              <p id="modal-content-top"></p>
+                              <br />
+                              <br /> 
+                              <img id="modal-img" src="" alt="" class="img-responsive" />
+                              <br />
+                              <br />
+                              <p id="modal-content-bottom" > </p>
+                              <br />
+                              <br /> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- jQuery -->
+
+
 
           <!-- jQuery -->
           <script src="js/jquery.js"></script>
