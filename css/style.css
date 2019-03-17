@@ -244,7 +244,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 nav li a {
@@ -277,6 +277,25 @@ a:hover {
 a.active {
     color: #425BB5;
 }
+.navbar-nav{
+    float:none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color:transparent;
+}
+
+
+@media (max-width: 767px){
+    .navbar-default {
+        background-color: white;
+        border-color:white;
+    }     
+}
+
 
 
 /* home section
@@ -296,6 +315,12 @@ a.active {
 .disply-table {
     display: table;
     height: 100vh;
+}
+@media (max-width: 500px){
+    .disply-table {
+        display: table;
+        height: -webkit-fill-available!important;
+    }     
 }
 
 .text-white {
@@ -333,6 +358,14 @@ h4.text-white:before {
     top: 40px;
     left: 50px;
     z-index: 1
+}
+#profile-img {
+    float: right;
+}
+@media (max-width: 991px) {
+    #profile-img {
+        float: none;
+    }
 }
 
 
@@ -465,7 +498,6 @@ h4.text-white:before {
 
 #education {
     padding: 100px 0;
-    background: #f3f3f3
 }
 
 .education-table td {
@@ -478,6 +510,7 @@ h4.text-white:before {
 
 #projects {
     padding: 100px 0;
+    background: #f3f3f3
 }
 
 .portfolio .categories-grid span {
@@ -649,19 +682,23 @@ h4.text-white:before {
     opacity: 1;
 }
 
+
 .modal-content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     line-height: 50px;
 }
 
+.overflow-scroll {
+    height: some Height; TODO
+    overflow: scroll;
+}
 
 /* contact
 ==================================================*/
 
 #contact {
     padding: 100px 0;
-    background: #f3f3f3
 }
 
 #contact-form input,
