@@ -318,8 +318,8 @@ a.active {
 }
 @media (max-width: 500px){
     .disply-table {
-        /* display: table;
-        height: -webkit-fill-available!important; */
+        display: table;
+        height: -webkit-fill-available!important;
     }     
 }
 
