@@ -891,3 +891,9 @@ fieldset {
 .text-nowrap {
     white-space: nowrap;
 }
+
+@media (max-width: 460px){
+    .text-nowrap {
+        white-space:pre-wrap;
+    }    
+}
