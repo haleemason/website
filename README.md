@@ -1,1 +1,1 @@
-My personal website: www.bitfork.ml
+My personal website: www.mlpursuit.com
