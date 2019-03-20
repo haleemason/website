@@ -71,8 +71,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    min-width: 100vw!important;
+    /* min-width: 100vw!important; */
 }
+
+html, body {overflow-x: hidden;}
+
 
 .size-50 {
     font-size: 50px;
@@ -889,7 +892,7 @@ fieldset {
 }
 
 .text-nowrap {
-    white-space: nowrap;
+    white-space:pre-wrap;
 }
 
 @media (max-width: 460px){
