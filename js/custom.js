@@ -163,3 +163,18 @@ $(document).ready(function () {
 
     });
 });
+
+function populateModalContent(title, contentTop, contentBottom, imgPath, videoUrl = null) {
+    document.getElementById('modal-title').innerHTML = title;
+    document.getElementById('modal-content-top').innerHTML = contentTop;
+    document.getElementById('modal-content-bottom').innerHTML = contentBottom;
+    if (videoUrl) { 
+        document.getElementById('modal-video').src = videoUrl;
+        document.getElementById('modal-video').style.display = "block";
+    } else {
+        document.getElementById('modal-video').style.display = "none";
+    }
+    
+    document.getElementById('modal-img').src = imgPath;
+
+}
