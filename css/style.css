@@ -71,7 +71,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
+    /* min-width: 100vw!important; */
 }
+
+html, body {overflow-x: hidden;}
+
 
 .size-50 {
     font-size: 50px;
@@ -243,7 +247,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 nav li a {
@@ -276,6 +280,25 @@ a:hover {
 a.active {
     color: #425BB5;
 }
+.navbar-nav{
+    float:none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color:transparent;
+}
+
+
+@media (max-width: 767px){
+    .navbar-default {
+        background-color: white;
+        border-color:white;
+    }     
+}
+
 
 
 /* home section
@@ -295,6 +318,27 @@ a.active {
 .disply-table {
     display: table;
     height: 100vh;
+}
+@media (max-width: 500px){
+    .disply-table {
+        display: table;
+        height: -webkit-fill-available!important;
+    }     
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+h4.text-white:before {
+    position: absolute;
+    width: 30px;
+    left: -40px;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #ffffff;
+    top: 9px;
 }
 
 
@@ -317,6 +361,14 @@ a.active {
     top: 40px;
     left: 50px;
     z-index: 1
+}
+#profile-img {
+    float: right;
+}
+@media (max-width: 991px) {
+    #profile-img {
+        float: none;
+    }
 }
 
 
@@ -449,7 +501,6 @@ a.active {
 
 #education {
     padding: 100px 0;
-    background: #f3f3f3
 }
 
 .education-table td {
@@ -462,6 +513,7 @@ a.active {
 
 #projects {
     padding: 100px 0;
+    background: #f3f3f3
 }
 
 .portfolio .categories-grid span {
@@ -633,19 +685,23 @@ a.active {
     opacity: 1;
 }
 
+
 .modal-content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     line-height: 50px;
 }
 
+/* .overflow-scroll {
+    height: some Height; TODO
+    overflow: scroll;
+} */
 
 /* contact
 ==================================================*/
 
 #contact {
     padding: 100px 0;
-    background: #f3f3f3
 }
 
 #contact-form input,
@@ -829,4 +885,18 @@ fieldset {
 .disply-table {
     display: table;
     height: 100vh;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.text-nowrap {
+    white-space:pre-wrap;
+}
+
+@media (max-width: 460px){
+    .text-nowrap {
+        white-space:pre-wrap;
+    }    
 }
